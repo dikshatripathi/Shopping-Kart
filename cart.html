@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart-style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">ShopHorizon</a>
+               
+              
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="cart.html">Cart</a><span id="cartCount">0</span></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+                <i class="fa-solid fa-bars menu-icon" style="color: #f6f2f7;"></i>
+
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main class="cart-content">
+            <h1>Your Shopping Cart</h1>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <div class="checkout">
+                <p><span id="cartTotal">₹0.00</span></p>
+                <button id="checkoutBtn"> Proceed to Checkout</button>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="f1">
+        <div class="footer">
+            <div class="footclass">
+                <div>
+                    <h3>About</h3>
+                    <div>Contact Us</div>
+                    <div>About Us</div>
+                    <div>Career</div>
+                    <div>MyShop Stories</div>
+                </div>
+                <div>
+                    <h3>Help</h3>
+                    <div>Payments</div>
+                    <div>Shipping</div>
+                    <div>Cancellation</div>
+                    <div>Return</div>
+                    <div>Report</div>
+                </div>
+                <div>
+                    <h3>Consumer Policy</h3>
+                    <div>Cancellation</div>
+                    <div>Return</div>
+                    <div>Terms of Use</div>
+                    <div>Security</div>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <div>Facebook</div>
+                    <div>LinkedIn</div>
+                    <div>YouTube</div>
+                    <div>Twitter</div>
+                </div>
+            </div>
+            <div class="vl"></div>
+            <div class="mail-us">
+                <h3>Mail Us</h3>
+                <div>MyShop Internet Private Ltd</div>
+                <div>...</div>
+                <div>...</div>
+                <div>...</div>
+            </div>
+        </div>
+        
+        </div>
+        <div>
+            <hr>
+            <div>
+                <p class="f2">© 2023 ShopHorizon Ltd</p>
+            </div>
+        </div>
+    </footer>
+    <script src="cart-script.js"></script>
+    
+</body>
+
+</html>

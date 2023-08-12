@@ -1,0 +1,94 @@
+/* product-card.css */
+.product-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.product-details {
+    flex: 2;
+    padding: 15px;
+}
+
+.product-details h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.product-details .price {
+    display: block;
+    font-weight: bold;
+    color: #FF5733;
+    margin-bottom: 10px;
+}
+
+.product-details .add-to-cart-btn {
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-details .add-to-cart-btn:hover {
+    background-color: #E74C3C;
+}
+
+
+/* Existing styles */
+
+/* Style for filter options */
+.sidebar h3 {
+    margin-top: 20px;
+}
+
+.filter-checkbox,
+.filter-radio {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for the "Apply Filters" button */
+#applyFiltersBtn {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#applyFiltersBtn:hover {
+    background-color: #0056b3;
+}

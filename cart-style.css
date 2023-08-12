@@ -1,0 +1,162 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.cart-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.cart-items {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: white;
+    margin: 20px 0px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    margin-top: 25px;
+}
+
+.cart-item img {
+    max-width: 180px;
+    margin-right: 20px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.checkout {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#cartTotal {
+    font-weight: bold;
+}
+
+#checkoutBtn {
+    margin-left: 25px;
+    background-color: #f0c14b;
+    border: none;
+    padding: 10px 20px;
+    color: #111;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#checkoutBtn:hover {
+    background-color: #d89e30;
+}
+
+
+/* cart-style.css */
+
+/* Style for cart item cards */
+.cart-item {
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.cart-item-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.cart-item-details {
+    flex: 1;
+    padding-left: 10px;
+}
+
+/* Style for quantity selector and buttons */
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.quantity-selector button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.quantity-selector span {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.remove-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.remove-button:hover {
+    background-color: #c0392b;
+}
+
+/* Add your other styles as needed */

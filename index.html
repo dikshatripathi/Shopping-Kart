@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product-card.css">
+    <title>Shopping Cart Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">ShopHorizon</a>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                    <button id="searchBtn">Search</button>
+                </div>
+              
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="cart.html">Cart</a><span id="cartCount">0</span></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+                <i class="fa-solid fa-bars menu-icon" style="color: #f6f2f7;"></i>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="navunder">
+        <div class="nav-un">
+            <div class="pic"><img class="pic1"
+                    src="https://rukminim2.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" alt="">
+                <p class="te">Grocessary</p>
+            </div>
+            <div class="pic">
+                <img class="pic1" src="https://rukminim2.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100"
+                    alt="">
+                <p class="te">Mobiles</p>
+            </div>
+            <div class="pic"><img
+                    src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/0d75b34f7d8fbcb3.png?q=100" alt=""
+                    class="pic1">
+                <div class="dropdown-container">
+                    <span class="hoverable te">Fashion</span>
+                    <div class="dropdown-content">
+                        <a href="#">Men's Shirt wear</a>
+                        <a href="#">Women's Ethic </a>
+                        <a href="#">Formals for men and Women </a>
+                        <a href="#">Women's Top wear</a>
+                        <a href="#">Men's Shoes </a>
+                        <a href="#">Women's Sneakers </a>
+                        <!-- Add more options as needed -->
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="pic"><img src="https://rukminim2.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100"
+                    alt="" class="pic1">
+                <div class="dropdown-container">
+                    <span class="hoverable te">Electronics</span>
+                    <div class="dropdown-content">
+                        <a href="#">Audio</a>
+                        <a href="#">Electronic GST Store</a>
+                        <a href="#">Camera and Assesories</a>
+                        <a href="#">Health and personal care</a>
+                        <a href="#">Computer Peripherals</a>
+                        <a href="#">Gaming</a>
+                        <a href="#">Soundbar</a>
+                        <a href="#">Bluetooth headphone</a>
+                        <a href="#">Laptop and Desktop</a>
+                        <!-- Add more options as needed -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="pic"><img src="https://rukminim2.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100"
+                    alt="" class="pic1">
+                <div class="dropdown-container">
+                    <span class="hoverable te">Home & Furnitures</span>
+                    <div class="dropdown-content">
+                        <a href="#">Home Furnishing</a>
+                        <a href="#">Furniture Studio</a>
+                        <a href="#">Living Room Furniture</a>
+                        <a href="#">Kitchen and Dining</a>
+                        <a href="#">Bedroom Furniture</a>
+                        <a href="#">Bedsheet</a>
+                        <a href="#">Blanket</a>
+                        <a href="#">Curtains</a>
+                        <a href="#">Home Decore</a>
+                        <!-- Add more options as needed -->
+                    </div>
+                </div>
+            </div>
+            <div class="pic"><img src="https://rukminim2.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100"
+                    alt="" class="pic1">
+                <p class="te">Appliances</p>
+            </div>
+            <div class="pic"><img src="https://rukminim2.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100"
+                    alt="" class="pic1">
+                <p class="te">Travels</p>
+            </div>
+            <div class="pic"><img src="https://rukminim2.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100"
+                    alt="" class="pic1">
+                <p class="te"></p>
+                <div class="dropdown-container">
+                    <span class="hoverable te">Beauty,Toys & More</span>
+                    <div class="dropdown-content">
+                        <a href="#">Beauty and Personal Care</a>
+                        <a href="#">Men's Grooming</a>
+                        <a href="#">Food and Drink</a>
+                        <a href="#">Baby care</a>
+                        <a href="#">Toys & School supplies</a>
+                        <a href="#">Sports and Fitness</a>
+                        <a href="#">Books</a>
+
+                        <!-- Add more options as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <aside class="sidebar">
+            <!-- Existing filters -->
+            <h1>Filters</h1>
+            <!-- Add Color Filter -->
+            <h3>Color</h3>
+            <label>
+                <input type="checkbox" class="filter-checkbox" data-filter="color" data-value="red">
+                Red
+            </label>
+            <label>
+                <input type="checkbox" class="filter-checkbox" data-filter="color" data-value="blue">
+                Blue
+            </label>
+            <!-- Add more color options -->
+
+            <!-- Add Price Range Filter -->
+            <h3>Price Range</h3>
+            <label>
+                <input type="radio" class="filter-radio" name="price-range" data-filter="price" data-value="0-5000">
+                ₹0 - ₹5000
+            </label>
+            <label>
+                <input type="radio" class="filter-radio" name="price-range" data-filter="price" data-value="5001-10000">
+                ₹5001 - ₹10000
+            </label>
+            <label>
+                <input type="radio" class="filter-radio" name="price-range" data-filter="price"
+                    data-value="10001-70000">
+                ₹10001 - ₹70000
+            </label>
+            <!-- Add more price range options -->
+
+            <!-- Add Review Filter -->
+            <h3>Review</h3>
+            <label>
+                <input type="checkbox" class="filter-checkbox" data-filter="review" data-value="4">
+                4 Stars & Above
+            </label>
+            <label>
+                <input type="checkbox" class="filter-checkbox" data-filter="review" data-value="3">
+                3 Stars & Above
+            </label>
+            <!-- Add more review options -->
+
+            <!-- Add Occasion Filter -->
+            <h3>Occasion</h3>
+            <label>
+                <input type="checkbox" class="filter-checkbox" data-filter="occasion" data-value="party">
+                Party
+            </label>
+            <label>
+                <input type="checkbox" class="filter-checkbox" data-filter="occasion" data-value="casual">
+                Casual
+            </label>
+            <!-- Add more occasion options -->
+
+            <button id="applyFiltersBtn">Apply Filters</button>
+        </aside>
+
+
+        <main class="main-content">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://rukminim2.flixcart.com/image/416/416/jfbfde80/camera/n/r/n/canon-eos-eos-3000d-dslr-original-imaf3t5h9yuyc5zu.jpeg?q=70"
+                        alt="Product 1">
+                </div>
+                <div class="product-details">
+                    <h2>Canon EOS 3000D DSLR Camera </h2>
+                    <p>1 Camera Body, 18 - 55 mm Lens (Black)</p>
+                    <span class="price">₹32490</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/television/m/n/p/-original-imagkzctc2gkvfgf.jpeg?q=70"
+                        alt="Product 1">
+                </div>
+                <div class="product-details">
+                    <h2>SAMSUNG HD Ready LED Smart Tizen TV</h2>
+                    <p>80 cm (32 Inch) HD with Bezel-free Design</p>
+                    <span class="price">₹13990</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://rukminim2.flixcart.com/image/416/416/kgl5ua80/washing-machine-new/k/w/s/105fliwbm5dg-motorola-original-imafwse6knmbgy48.jpeg?q=70"
+                        alt="Product 3">
+                </div>
+                <div class="product-details">
+                    <h2>Motorola Waching Machine</h2>
+                    <p> 10.5 kg 5 Star Smart Wi-Fi Enabled Inverter Technology Fully Automatic Front Load with In-built
+                        Heater Grey (105FLIWBM5DG)</p>
+                    <span class="price">₹27990</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/air-conditioner-new/c/u/d/-original-imagnhu5fgrug6jp.jpeg?q=70"
+                        alt="Product 1">
+                </div>
+                <div class="product-details">
+                    <h2>SAMSUNG AC</h2>
+                    <p> Convertible 5-in-1 Cooling 2023 Model 2 Ton 3 Star Split Inverter AC with Wi-fi</p>
+                    <span class="price">₹50999</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://rukminim2.flixcart.com/image/416/416/ku2zjww0/refrigerator-new/b/s/w/fp-263d-protton-roy-magnum-steel-n-5-na-whirlpool-original-imag79kmhrp5xxmd.jpeg?q=70"
+                        alt="Product 1">
+                </div>
+                <div class="product-details">
+                    <h2>Whirlpool Free Triple Door Refrigerator</h2>
+                    <p> 240 L Frost (Magnum Steel, FP 263D PROTTON ROY MAGNUM STEEL(N))</p>
+                    <span class="price">₹25790</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/k3rmm4w0/mobile-phone-lens/e/k/r/dual-smartphone-camera-lens-with-0-45x-wide-angle-lens-and-super-original-imaffcmyzcksgffj.jpeg?q=70"
+                        alt="Product 1">
+                </div>
+                <div class="product-details">
+                    <h2>WONDERWORLD ™ 2 in 1 Clip-on Lens Kit Cell Phone Camera Lens 0.45X Mobile Phone Lens </h2>
+                    <span class="price">₹530</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/h/h/d/-original-imags487gaqqhcea.jpeg?q=70"
+                        alt="Product 1">
+                </div>
+                <div class="product-details">
+                    <h2>realme C53 </h2>
+                    <p>(Champion Gold, 64 GB) (6 GB RAM)#JustHere</p>
+                    <span class="price">₹10999</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://rukminim2.flixcart.com/image/312/312/kmp7ngw0/otg-new/t/z/a/hd6976-philips-original-imagfjd9zbamgtey.jpeg?q=70"
+                        alt="Product 1">
+                </div>
+                <div class="product-details">
+                    <h2>PHILIPS Oven Toaster Grill</h2>
+                    <p> 36-Litre HD6976/00(882697600010) (OTG)</p>
+                    <span class="price">₹1299</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/l3dcl8w0/water-purifier/e/b/h/mineral-ro-copper-swift-15-ltr-water-filter-keel-original-imageg6h7xsfrqze.jpeg?q=70"
+                        alt="Product 1">
+                </div>
+                <div class="product-details">
+                    <h2>Keel Mineral Ro</h2>
+                    <p> Copper Audi 12 ltr + Water Filter 12 L RO + UV + UF + TDS Water Purifier</p>
+                    <span class="price">₹3499</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://rukminim2.flixcart.com/image/416/416/k1118cw0/wet-grinder/5/c/q/rapid-butterfly-original-imafkp3aya8b2phz.jpeg?q=70"
+                        alt="Product 1">
+                </div>
+                <div class="product-details">
+                    <h2>Butterfly Rapid Wet Grinder (Grey)</h2>
+                    <span class="price">₹4899</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/ksj9dow0/painting/0/w/g/19-3-indr1193bk-indianara-original-imag62ty4yzghdat.jpeg?q=70"
+                        alt="Product 1">
+                </div>
+                <div class="product-details">
+                    <h2>Framed Wall Hanging Laminated Paintings</h2>
+                    <p>Indianara Set of 3 Welcome Home Matt Art Prints 9.5 inch x 9.5 inch each without Glass (1193BK)
+                        Digital Reprint</p>
+                    <span class="price">₹284</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://rukminim2.flixcart.com/image/416/416/kvvad8w0/book/3/n/q/the-mystery-box-original-imag8nyfr2ezpebs.jpeg?q=70"
+                        alt="Product 1">
+                </div>
+                <div class="product-details">
+                    <h2>The Mystery Box </h2>
+                    <p>(English, Paperback, Dessai Roma N)</p>
+                    <span class="price">₹200</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/l51d30w0/shirt/n/q/i/44-lxsfcslhk35009-louis-philippe-original-imagfssyd2gzsfwd.jpeg?q=70"
+                        alt="Product 1">
+                </div>
+                <div class="product-details">
+                    <h2>Men Slim Fit Printed Spread Collar Formal Shirt</h2>
+                    <p>LOUIS PHILIPPE.</p>
+                    <span class="price">₹3044</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/sari/c/5/c/free-aliya-01-jay-brahmani-online-unstitched-original-imagrufztb3qjngn.jpeg?q=70"
+                        alt="Product 1">
+                </div>
+                <div class="product-details">
+                    <h2>Saree (Multicolor) 1</h2>
+                    <p>Digital Print Bollywood Georgette </p>
+                    <span class="price">₹750</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+        </main>
+
+
+    </div>
+    <div class="pagination main-content">
+        <button class="page-btn" id="prevBtn">Previous</button>
+        <button class="page-btn roun" id="page1">1</button>
+        <button class="page-btn roun" id="page2">2</button>
+        <button class="page-btn roun" id="page3">3</button>
+        <button class="page-btn roun" id="page4">4</button>
+        <button class="page-btn roun" id="page5">5</button>
+        <button class="page-btn roun" id="page6">6</button>
+        <button class="page-btn" id="nextBtn">Next</button>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="f1">
+        <div class="footer">
+            <div class="footclass">
+                <div>
+                    <h3>About</h3>
+                    <div>Contact Us</div>
+                    <div>About Us</div>
+                    <div>Career</div>
+                    <div>MyShop Stories</div>
+                </div>
+                <div>
+                    <h3>Help</h3>
+                    <div>Payments</div>
+                    <div>Shipping</div>
+                    <div>Cancellation</div>
+                    <div>Return</div>
+                    <div>Report</div>
+                </div>
+                <div>
+                    <h3>Consumer Policy</h3>
+                    <div>Cancellation</div>
+                    <div>Return</div>
+                    <div>Terms of Use</div>
+                    <div>Security</div>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <div>Facebook</div>
+                    <div>LinkedIn</div>
+                    <div>YouTube</div>
+                    <div>Twitter</div>
+                </div>
+            </div>
+            <div class="vl"></div>
+            <div class="mail-us">
+                <h3>Mail Us</h3>
+                <div>MyShop Internet Private Ltd</div>
+                <div>...</div>
+              
+            </div>
+        </div>
+        
+        </div>
+        <div>
+            <hr>
+            <div>
+                <p class="f2">© 2023 ShopHorizon Ltd</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
